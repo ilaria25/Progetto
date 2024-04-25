@@ -1,0 +1,470 @@
+html,
+#root,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 62, 5%;
+  --font-size-s: 0.95rem;
+  --font-size-m: 1.6rem;
+  --font-size-l: 2rem;
+  --font-size-xl: 2.6rem;
+  --color-primary: #dadada;
+  --color-grey: #4a5057;
+  --color-design: #00ce79;
+  --color-dark: #090c0f;
+  --color-main: #1e2630;
+  --gap-s: 1rem;
+  --gap-m: calc(var(--gap-s) * 2);
+  --gap-l: calc(var(--gap-s) * 3);
+  --gapxl: calc(var(--gap-s) * 5);
+  --max-bloch-width: 900px;
+  --font-standard: "Poppins", sans-serif;
+}
+
+/* -----------------------------------------------------------------------------------------
+
+/* LOGIN PAGE */
+
+.login-header {
+  position: relative;
+  height: 9rem;
+  display: grid;
+  grid-template-columns: 20rem auto 20rem;
+  padding-block: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serifz;
+  font-weight: lighter;
+  color: #00ce79;
+  background-color: var(--color-main);
+}
+
+.login-main {
+  position: relative;
+  width: 100%;
+  height: 29rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 17rem;
+  height: 17rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder {
+  position: relative;
+  width: 12rem;
+  height: 1.5rem;
+}
+
+.buttons {
+  position: relative;
+  margin-top: 1.2rem;
+  width: 4rem;
+  height: 1.5rem;
+}
+
+.err-msg {
+  color: red;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* HOMEPAGE */
+
+/* header style  */
+
+.header {
+  position: relative;
+  background-color: var(--color-main);
+  display: grid;
+  grid-template-columns: 20rem auto 20rem;
+  padding-block: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serifz;
+  font-weight: lighter;
+  color: #00ce79;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 1.4rem;
+  font-style: oblique;
+  margin-top: 1rem;
+}
+
+.nav-menu {
+  color: #dadada;
+  list-style: none;
+  display: flex;
+  grid-column: 2;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1.7rem;
+  font-family: var(--font-standard);
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0.2rem;
+  grid-column: 3;
+  margin-right: 1.4rem;
+  gap: 0.7rem;
+}
+
+.top-menu {
+  position: relative;
+  width: 100%;
+  font-family: var(--font-standard);
+  color: var(--color-primary);
+  background-color: var(--color-main);
+  font-style: oblique;
+  padding-bottom: 0.4rem;
+  padding-top: 0.3rem;
+  grid-column: 1/-1;
+}
+
+.pages {
+  color: var(--color-design);
+  text-decoration: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+/* ------------------------- */
+
+/* body-style */
+
+.post-spaces {
+  margin-top: 1rem;
+  position: relative;
+  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5rem;
+  gap: 0.5rem;
+}
+
+.label {
+  position: relative;
+  padding: 0.25rem;
+  width: 20rem;
+  height: 2.5rem;
+  border-radius: 3%;
+  border: 1px solid var(--color-primary);
+}
+
+.post-btn {
+  width: 3.2rem;
+  height: 1.5rem;
+  border-radius: 3%;
+  border: 1px solid var(--color-primary);
+}
+
+.main-body {
+  position: relative;
+  height: 40rem;
+  background-color: var(--color-main);
+  display: grid;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.home-title {
+  position: relative;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-title-two {
+  position: relative;
+  color: var(--color-primary);
+  display: flex;
+  margin-left: 3.7rem;
+  font-size: larger;
+  margin-bottom: 1.5rem;
+}
+
+.content {
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  height: 40rem;
+  background-image: url("/Users/ilaria/Desktop/CORSO DIGITAZON/Progetto/client/public/images/wp6875074.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
+
+.text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+  color: var(--color-primary);
+}
+
+.text-two {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+  color: var(--color-primary);
+  margin-left: 3.8rem;
+}
+
+/* pages style */
+
+.posts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: baseline;
+  color: var(--color-primary);
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.post-title {
+  font-size: var(--font-size-m);
+  font-style: oblique;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.comment-section {
+  padding: 0;
+  width: 15rem;
+}
+
+.user {
+  font-size: small;
+  margin-bottom: 0.1rem;
+}
+
+.comment-text {
+  border: 1px solid var(--color-primary);
+  border-radius: 3%;
+  padding: 0.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  width: 15rem;
+  font-size: var(--font-size-s);
+}
+
+.new-com {
+  /* added comment */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 3%;
+  color: var(--color-dark);
+  width: 19.55rem;
+  font-size: var(--font-size-s);
+  gap: 0.5rem;
+}
+
+.delete-btn {
+  font-size: 0.7rem;
+  border-radius: 3%;
+  border: 1px solid var(--color-primary);
+  height: 1.2rem;
+}
+
+.new-comment {
+  /* add comment */
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+.new-label {
+  font-size: 0.8rem;
+  padding: 0.35rem;
+  width: 10.8rem;
+}
+
+.comm-btn {
+  font-size: 0.7rem;
+  border-radius: 3%;
+  border: 1px solid var(--color-primary);
+  height: 1.2rem;
+}
+
+/* ------------------------- */
+
+/* other */
+
+.header,
+.top-menu {
+  background-color: var(--color-main);
+}
+
+/* ------------------------- */
+
+/* footer style */
+
+.footer {
+  display: flex;
+  background-color: var(--color-main);
+  justify-content: center;
+  align-items: center;
+  height: 7.5rem;
+  position: relative;
+}
+
+.privacy {
+  display: flex;
+  color: #4a5057;
+  opacity: 1;
+  font-size: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* contacts style */
+
+.main-contacts {
+  list-style-type: none;
+  background-color: var(--color-main);
+  position: relative;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-contacts::before {
+  content: "";
+  position: absolute;
+  background-image: url("/Users/ilaria/Desktop/CORSO DIGITAZON/Progetto/client/public/images/wp6875074.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
+
+.social-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: baseline;
+  background-color: #68798f;
+  width: 20rem;
+  position: relative;
+  border: 0.2rem solid black;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: baseline;
+  color: var(--color-primary);
+}
+
+.social-text {
+  color: var(--color-primary);
+  font-weight: 550;
+  font-style: oblique;
+}
+
+.social-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.row {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mail {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+.mail-btn {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  color: var(--color-primary);
+  gap: 0.5rem;
+}
+
+.email-text {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  flex-direction: column;
+  font-style: oblique;
+  font-weight: 550;
+  margin-bottom: 0.5rem;
+}
+
+.footer-contacts {
+  display: flex;
+  background-color: var(--color-main);
+  height: 6rem;
+  justify-content: center;
+  align-items: center;
+  height: 7.5rem;
+  position: relative;
+}
